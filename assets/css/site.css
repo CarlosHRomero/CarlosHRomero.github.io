@@ -13,7 +13,7 @@ body {
     background-image: url('bkg5.jpg');
     width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 
 /* Set padding to keep content from hitting the edges xxxx */
@@ -62,9 +62,6 @@ input[type="checkbox"].input-validation-error {
     color: white;
 }
 
-.row {
-    padding-top: 60px;
-}
 
 label, p, h2, h1 {
     color: #F2F5A9;
@@ -82,6 +79,9 @@ label, p, h2, h1 {
         font-size: 20px;
         color: blue;
     }
+.row {
+    padding-top: 30px;
+}
 }
 
 @media (min-width: 962px) {
@@ -89,6 +89,10 @@ label, p, h2, h1 {
         font-size: 24px;
         color: green;
     }
+.row {
+    padding-top: 60px;
+}
+
 }
 
 h1.mayor {
