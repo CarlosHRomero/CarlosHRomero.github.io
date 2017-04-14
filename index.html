@@ -2,55 +2,71 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <meta charset="utf-8" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+    <!--<style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>-->
 
     <title></title>
 </head>
+
 <body>
-   <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+
+
+    <div class="navbar navbar-inverse">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>-->
+                </button>
                 <a class="navbar-brand" href="index">Carlos Hernando Romero </a>
             </div>
-            <div class="navbar-collapse">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="Index">Servicios </a></li>
                     <li><a href="Contact">Contacto </a></li>
-                    <!--@*
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>*@
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>-->
                 </ul>
             </div>
         </div>
     </div>
-     <div class="imag">
-        <div class="container body-content">
-            <div class="row">
-                <div class="col-sm-7">
-                    <h1 class="mayor">Desarrollo de Software</h1>
-                    <div class="Lista">
-                        <ul>
-                            <li>Aplicaciones Web</li>
-                            <li>Servicios Web</li>
-                            <li>Aplicaciones Desktop</li>
-                        </ul>
-                    </div>
+
+    <div class="body-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="mayor">Desarrollo de Software</h1>
+                <div class="Lista">
+                    <ul>
+                        <li>Aplicaciones Web</li>
+                        <li>Servicios Web</li>
+                        <li>Aplicaciones Desktop</li>
+                    </ul>
                 </div>
             </div>
-                <hr />
-                <footer></footer>
-
         </div>
+        <hr />
+        <footer></footer>
+
     </div>
+
+
 </body>
 </html>

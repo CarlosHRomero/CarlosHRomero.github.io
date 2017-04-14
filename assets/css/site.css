@@ -1,9 +1,14 @@
-﻿body {
+﻿ .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+/*body {
     padding-top: 50px;
     padding-bottom: 20px;
     
-}
-.imag
+}*/
+.body-content
 {
     background-image: url('bkg5.jpg');
     height:768px;
