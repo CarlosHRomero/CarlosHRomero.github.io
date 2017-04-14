@@ -1,17 +1,19 @@
-﻿ .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-        }
+﻿.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
 
-/*body {
-    padding-top: 50px;
+body {
+    /*padding-top: 50px;
     padding-bottom: 20px;
-    
-}*/
-.body-content
-{
+    color: red;*/
+}
+
+.body-content {
     background-image: url('bkg5.jpg');
-    height:768px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Set padding to keep content from hitting the edges xxxx */
@@ -53,42 +55,68 @@ input[type="checkbox"].input-validation-error {
 }
 
 .navbar-header {
-    padding-right:50px;
+    padding-right: 50px;
 }
 
-.navbar-brand, ul.nav a{
+.navbar-brand, ul.nav a {
     color: white;
 }
-.row{
-    padding-top:60px;
-}
-label, p, h2, h1
-{
-    color:#F2F5A9;
+
+.row {
+    padding-top: 60px;
 }
 
-h1.mayor
-{
-    font-size:48px;
-    font-weight:bold;
+label, p, h2, h1 {
+    color: #F2F5A9;
 }
 
-ul.nav a{
-    font-size:16px;
-}
-.Lista{
-    padding-top:20px;
-} 
-ul{
-    list-style-image: url("validar2.jpg"); 
+@media (min-width: 300px) {
+    body {
+        font-size: 12px;
+        color: red;
+    }
 }
 
-.Lista li{
-    font-size:36px;
-    color:#F2F5A9;
-    list-style-image: url('validar2.jpg'); 
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+        color: blue;
+    }
+}
+
+@media (min-width: 962px) {
+    body {
+        font-size: 24px;
+        color: green;
+    }
+}
+
+h1.mayor {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.Lista li {
+    font-size: 1.5em;
+    color: #F2F5A9;
+    list-style-image: url('validar2.jpg');
+}
+
+ul.nav a {
+    font-size: 16px;
+}
+
+.Lista {
+    padding-top: 20px;
+}
+
+ul {
+    list-style-image: url("validar2.jpg");
 }
 
 
-}
 
+img {
+    width: 100%;
+    height: auto;
+}
