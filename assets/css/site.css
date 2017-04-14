@@ -69,7 +69,7 @@ label, p, h2, h1 {
 
 @media (min-width: 300px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
         color: red;
     }
 }
@@ -106,8 +106,8 @@ h1.mayor {
     list-style-image: url('validar2.jpg');
 }
 
-ul.nav a {
-    font-size: 16px;
+a.navbar-brand, ul.nav a {
+    font-size: 0.9em;
 }
 
 .Lista {
