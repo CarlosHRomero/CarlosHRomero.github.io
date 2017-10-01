@@ -107,7 +107,9 @@ h1.mayor {
 }
 
 a.navbar-brand, ul.nav a {
-    font-size: 0.9em;
+    font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    
 }
 
 .Lista {
