@@ -10,7 +10,6 @@ body {
 }
 
 .body-content {
-
 }
 
 /* Set padding to keep content from hitting the edges xxxx */
@@ -64,38 +63,49 @@ label, p, h2, h1 {
     color: #F2F5A9;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 300px) {
     body {
         font-size: 16px;
         color: red;
     }
+    h1.mayor {
+        font-size: 1.5em;
+        /*font-weight: bold;*/
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     body {
         font-size: 20px;
         color: blue;
     }
-.row {
-    padding-top: 30px;
-}
+
+    .row {
+        padding-top: 30px;
+    }
+    h1.mayor {
+        font-size: 1.5em;
+        /*font-weight: bold;*/
+    }
+
 }
 
-@media (min-width: 962px) {
+@media (min-width: 768px) {
     body {
         font-size: 24px;
         color: green;
     }
-.row {
-    padding-top: 60px;
+
+    .row {
+        padding-top: 60px;
+    }
+
+    h1.mayor {
+        font-size: 2em;
+        /*font-weight: bold;*/
+    }
 }
 
-}
-
-h1.mayor {
-    font-size: 2em;
-    font-weight: bold;
-}
 
 .Lista li {
     font-size: 1.5em;
@@ -106,7 +116,6 @@ h1.mayor {
 a.navbar-brand, ul.nav a {
     font-family: "Montserrat",sans-serif;
     font-size: 18px;
-    
 }
 
 .Lista {
@@ -116,8 +125,8 @@ a.navbar-brand, ul.nav a {
 ul {
     list-style-image: url("validar2.jpg");
 }
-.derecha
-{
+
+.derecha {
     float: right;
 }
 
@@ -126,12 +135,14 @@ img {
     width: 100%;
     height: auto;
 }
+
 .home {
     height: 70vw;
     background-image: url('bkg5.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
 .services-box {
     padding: 30px;
     background-color: #212121;
