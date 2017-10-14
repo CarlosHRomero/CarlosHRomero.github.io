@@ -17,11 +17,18 @@ $(document).ready(function () {
         //$(image).load(/*function () {
         //    alert(image.width + 'x' + image.height);
         //}*/);
+        var width_vp = document.documentElement.clientWidth; // ancho
+        var height_vp = window.innerHeight; // alto
 
         image.src = image_url;
-        var ratio = parseInt (image.height*100/image.width)-10;
-        //alert(ratio);
-        $('div.home').css('height', ratio+'vw');
+        var ratio =image.height / image.width;
+
+        var height_div = parseInt( ratio * width_vp);
+        alert(height_div);
+        if (height_div > height_vp - 50)
+            height_div = height_vp - 50
+        
+        $('div.home').css('height', height_div+'px');
     }
     
     //var url = $('.home').css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', '');
