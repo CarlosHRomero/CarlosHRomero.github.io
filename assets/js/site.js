@@ -24,7 +24,7 @@ $(document).ready(function () {
         var ratio =image.height / image.width;
 
         var height_div = parseInt( ratio * width_vp);
-        alert(height_div);
+        //alert(height_div);
         if (height_div > height_vp - 50)
             height_div = height_vp - 50
         
