@@ -1,12 +1,14 @@
 // JavaScript source code
 
-$(document).ready(function () {
+$(document).ready(resize);
+
+function resize() {
     var image_url = $('div.home').css('background-image'),
-    image;
+        image;
 
     // Remove url() or in case of Chrome url("")
     image_url = image_url.match(/^url\("?(.+?)"?\)$/);
-   
+
 
     if (image_url[1]) {
         image_url = image_url[1];
@@ -21,25 +23,20 @@ $(document).ready(function () {
         var height_vp = window.innerHeight; // alto
 
         image.src = image_url;
-        var ratio =image.height / image.width;
+        var ratio = image.height / image.width;
 
-        var height_div = parseInt( ratio * width_vp);
-        //alert(height_div);
+        var height_div = parseInt(ratio * width_vp);
+        console.log('ratio ' + ratio);
+        console.log('width_vp ' + width_vp);
+        console.log('ratio * width_vp ' + ratio * width_vp);
         if (height_div > height_vp - 50)
             height_div = height_vp - 50
-        
-        $('div.home').css('height', height_div+'px');
+        else
+            height_div = height_div - 15
+
+        console.log('height_div ' + height_div);
+        $('div.home').css('height', height_div + 'px');
     }
-    
-    //var url = $('.home').css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', '');
-    
-    //var bgImg = $('div.home').css('background-image');//  $('<img />');
-    //alert(bgImg.height);
-    //bgImg.hide();
-    //bgImg.bind('load', function () {
-    //    var height = $(this).height();
-    //    alert(height);
-    //});
-    //$('#myDiv').append(bgImg);
-    //bgImg.attr('src', url);
-});
+
+
+}
