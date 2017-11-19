@@ -29,10 +29,10 @@ function resize() {
         console.log('ratio ' + ratio);
         console.log('width_vp ' + width_vp);
         console.log('ratio * width_vp ' + ratio * width_vp);
-        if (height_div > height_vp - 50)
+        if (height_div > height_vp - 40)
             height_div = height_vp - 50
         else
-            height_div = height_div - 15
+            height_div = height_div - 30
 
         console.log('height_div ' + height_div);
         $('div.home').css('height', height_div + 'px');
